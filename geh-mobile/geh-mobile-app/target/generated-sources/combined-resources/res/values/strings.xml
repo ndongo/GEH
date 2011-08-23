@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World !</string>
+    <string name="app_name">geh</string>
+    
+    <string name="btnValidateLabel">Validate</string>
+    <string name="btnNextLabel">Next ></string>
+    <string name="titleLabel">Include sample</string>
+</resources>

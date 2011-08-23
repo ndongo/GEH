@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">    
+    
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.geh.android</groupId>
+        <artifactId>geh-mobile</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    
+    <groupId>com.geh.android</groupId> <!-- Not necessary, it's inherited -->
+    <artifactId>geh-mobile-test</artifactId>
+    <packaging>apk</packaging>
+    <name>GEH - Android Mobile - Test</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android-test</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <!-- the target apk, which we will test. will automatically be deployed to device in pre-integration-test
+            phase. -->
+            <groupId>com.geh.android</groupId>
+            <artifactId>geh-mobile-app</artifactId>
+            <version>${project.version}</version>
+            <type>apk</type>
+        </dependency>
+
+        <dependency>
+            <!-- optional: compile time dependency, in this case so that we can read from the R.java for example. -->
+            <groupId>com.geh.android</groupId>
+            <artifactId>geh-mobile-app</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <!--<finalName>${project.artifactId}</finalName>-->
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>maven-android-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

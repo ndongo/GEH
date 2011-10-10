@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+	<include android:id="@+id/title" layout="@layout/title"/>
+
+	<RadioGroup 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"		
+		android:orientation="vertical">
+    
+		<RadioButton 
+			android:text="Rep1 : .... "
+			android:id="@+id/radioButton1"
+			android:layout_margin="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+		
+		<RadioButton 
+			android:text="Rep2 : .... "
+			android:id="@+id/radioButton2"
+			android:layout_margin="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+		
+		<RadioButton
+			android:text="Rep3 : .... "
+			android:id="@+id/radioButton3"
+			android:layout_margin="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+		
+		<RadioButton 
+			android:text="Rep4 : .... "
+			android:id="@+id/radioButton4"
+			android:layout_margin="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+			
+	</RadioGroup>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity="center"
+    	android:orientation="vertical">	
+    		
+		<Button 
+			android:text="@string/btnValidateLabel"
+			android:id="@+id/btnValidate"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dip"/>
+
+		<Button 
+			android:text="@string/btnNextLabel"
+			android:id="@+id/btnNext"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dip"/>	
+			
+	</LinearLayout>
+	
+</LinearLayout>
